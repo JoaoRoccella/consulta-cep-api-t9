@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1>Consulta CEP</h1>
+
+    <form action="">
+
+        <div class="controle-form">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" onblur="consultaCEP(this.value)">
+        </div>
+
+        <div class="controle-form">
+            <label for="Logradouro">Logradouro:</label>
+            <input type="text" id="logradouro">
+        </div>
+
+        <div class="controle-form">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro">
+        </div>
+
+        <div class="controle-form">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade">
+        </div>
+
+        <div class="controle-form">
+            <label for="uf">UF:</label>
+            <input type="text" id="uf">
+        </div>
+
+    </form>
+
+    <script src="/script.js"></script>
+    <!-- <script>
+        
+        document.querySelector('#cep').addEventListener('blur', () => {
+            const cep = document.querySelector('#cep').value;
+            consultaCEP(cep);
+        });
+
+    </script> -->
+</body>
+</html>
