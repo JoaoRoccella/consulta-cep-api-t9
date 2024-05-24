@@ -31,6 +31,22 @@
       "bairro": "Ipiranga",
       "cidade": "São Paulo",
       "uf": "SP"
+    },
+    {
+      "id": "5373",
+      "cep": "03157040",
+      "logradouro": "Rua Granada",
+      "bairro": "Parque Sevilha",
+      "cidade": "São Paulo",
+      "uf": "SP"
+    },
+    {
+      "id": "a748",
+      "cep": "08730500",
+      "logradouro": "Rua Dr. Osmar Marinho Couto",
+      "bairro": "Alto do Ipiranga",
+      "cidade": "São Paulo",
+      "uf": "SP"
     }
   ]
 }

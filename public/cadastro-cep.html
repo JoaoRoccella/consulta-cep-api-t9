@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de CEP</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <h1>Cadastro CEP</h1>
+
+    <form action="">
+
+        <div class="controle-form">
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep">
+        </div>
+
+        <div class="controle-form">
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro">
+        </div>
+
+        <div class="controle-form">
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro">
+        </div>
+
+        <div class="controle-form">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade">
+        </div>
+
+        <div class="controle-form">
+            <label for="uf">UF:</label>
+            <input type="text" id="uf">
+        </div>
+
+        <div class="botoes">
+            <button type="button" id="btCadastrar">Cadastrar</button>
+            <button type="reset">Limpar</button>
+        </div>
+
+    </form>
+
+    <script src="/script.js"></script>
+
+    <script>
+        document.querySelector('#btCadastrar').addEventListener('click', () => {
+            
+            const enderecoCompleto = {
+                "cep": document.querySelector('#cep').value,
+                "logradouro": document.querySelector('#logradouro').value,
+                "bairro": document.querySelector('#bairro').value,
+                "cidade": document.querySelector('#cidade').value,
+                "uf": document.querySelector('#uf').value
+            }
+
+            cadastraCEP(enderecoCompleto);
+        });
+    </script>
+   
+</body>
+
+</html>

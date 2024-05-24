@@ -66,3 +66,17 @@ function limpaForm() {
     })
 
 }
+
+function cadastraCEP(enderecoCompleto) {
+
+    fetch('http://localhost:3000/endereco', {
+        "method": "POST",
+        "headers": {
+            "Content-type": "application/json"
+        },
+        "body": JSON.stringify(enderecoCompleto)
+    }).then(resposta => {       
+        resposta.ok ? window.alert('Endereço cadastrado!') : window.alert('Erro: ' + resposta.status)
+    })
+
+}
